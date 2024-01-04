@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet">
+</head>
+<style>
+    body {
+        background-image: url(background.png);
+        background-size: cover;
+        width: 99%;
+        background-repeat: no-repeat;
+        color: white;
+    }
+</style>
+
+<body>
+    <form class="form" action="homepage.html" onsubmit="return validateForm()">
+        <h2>Login</h2>
+        <label>
+            Username:
+            <input type="text" name="username" required>
+        </label>
+        <label>
+            Password:
+            <input type="password" name="password" required>
+        </label>
+        <label>
+            <input type="checkbox" name="remember-me">
+            Remember me
+        </label>
+        <input type="submit" value="Login">
+        <a href="forgot.html">Forgot password?</a>
+    </form>
+    <div class="guide">Please enter your username and password to login.</div>
+    <div class="loading" id="loading">Loading...</div>
+
+    <script>
+        function validateForm() {
+            var username = document.forms[0].username.value;
+            var password = document.forms[0].password.value;
+
+            if (username === "nathan@gmail.com" && password === "chavez123") {
+                showLoadingAnimation();
+                return true;
+            } else {
+                alert("Username or Password is Incorrect HAHA");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+body {
+    background-image: url(background.png);
+    background-size: cover;
+    width: 99%;
+    background-repeat: no-repeat;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-2 {
+    height: 500px;
+    display: flex;
+}
+
+.nav-2,
+.nav-2 a {
+    width: 50%;
+    color: black;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-evenly;
+}
+
+.nav-1 {
+
+    width: 50%;
+}
+
+.nav-a {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: white;
+}
+
+.nav-2 a {
+    border-radius: 3px;
+    margin-left: 25px;
+    color: black;
+    height: 25px;
+    width: 80px;
+    padding-top: 5px;
+}
